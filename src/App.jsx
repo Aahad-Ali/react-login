@@ -33,8 +33,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 function Post(props) {
   return (
     <div className="main">
-      <img src="" alt="..." />
-      {props.profile}
+      <img src={props.profile} alt="..." id="profile"/>
       <label>{props.label}</label>
       <div>
         <p className="my-3">{props.text}</p>
@@ -44,10 +43,10 @@ function Post(props) {
           id="post1"
         />
       </div>
-      <div>
-        <button>like</button>
-        <button>comment</button>
-        <button>share</button>
+      <div id="buttons">
+        <button className="my-3">like</button>
+        <button className="my-3">comments</button>
+        <button className="my-3">share</button>
       </div>
     </div>
   );
@@ -57,19 +56,19 @@ const Posts = () => (
     <Post
       profile="https://colorlib.com/etc/lf/Login_v18/images/bg-01.jpg"
       label="Aahad Ali"
-      text="Lorem ipsum, dost, consequuntur possimus reprehenderit?."
+      text="Lorem ipsum, dost, consequuntur possimus reprehenderit Lorem ipsum, dost, consequuntur possimus reprehenderit?."
       image="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/02/filmfare-1580695655.jpg"
     />
     <Post
       profile="https://colorlib.com/etc/lf/Login_v18/images/bg-01.jpg"
       label="Aahad Ali"
-      text="Lorem ipsum, dost, consequuntur possimus reprehenderit?."
+      text="Lorem ipsum, dost, consequuntur possimus reprehenderit Lorem ipsum, dost, consequuntur possimus reprehenderit?."
       image="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
     />
     <Post
       profile="https://colorlib.com/etc/lf/Login_v18/images/bg-01.jpg"
       label="Aahad Ali"
-      text="Lorem ipsum, dost, consequuntur possimus reprehenderit?."
+      text="Lorem ipsum, dost, consequuntur possimus reprehenderit Lorem ipsum, dost, consequuntur possimus reprehenderit?."
       image="https://images.squarespace-cdn.com/content/v1/5b398fb2f793925040070b55/1569358740365-XHKY3VFY8H86Q130T9MP/performers+on+stage?format=1000w"
     />
   </div>
